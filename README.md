@@ -6,7 +6,8 @@ Este proyecto proporciona un servicio de autenticación y autorización utilizan
 ## Importancia de la Autenticación y la Autorización
 
 La autenticación y la autorización son fundamentales para mantener la seguridad y privacidad de los datos de los usuarios. La autenticación garantiza que el usuario es quien dice ser, mientras que la autorización determina qué acciones puede realizar el usuario autenticado. En cualquier aplicación que maneje datos sensibles o información personal, es crucial tener mecanismos robustos de autenticación y autorización.
-Cómo Funciona el Mecanismo de Tokens de Sesión y de Refresco con JWT
+
+## Cómo Funciona el Mecanismo de Tokens de Sesión y de Refresco con JWT
 
 Este proyecto utiliza JWT (JSON Web Token) para gestionar las sesiones de usuario. JWT es una forma compacta y autónoma de transmitir información de manera segura entre partes. Se utiliza ampliamente para la autenticación sin estado (stateless authentication).
 
