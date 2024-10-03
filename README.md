@@ -33,14 +33,14 @@ Todas las rutas disponibles para la autenticación de usuarios están bajo el en
 - POST /api/user/refresh
     - Toma un token de refresco válido y devuelve un nuevo token de acceso, extendiendo la sesión del usuario.
 
-POST /api/user/logout
+- POST /api/user/logout
     - Invalida el token de refresco, cerrando la sesión actual del usuario.
 
-GET /api/user/protected
+- GET /api/user/protected
     - Una ruta protegida de ejemplo, accesible solo con un token de acceso válido.
     - Demuestra el uso de middleware de autenticación para restringir el acceso solo a usuarios autorizados.
         
-# EN -User Authentication and Authorization Service
+# EN - User Authentication and Authorization Service
 ## Introduction
 
 This project provides an authentication and authorization service using JWT (JSON Web Token). The service allows users to register, log in, refresh session tokens, and log out securely. A key aspect of this system is the use of session tokens (access tokens) and refresh tokens, ensuring secure and scalable authentication for modern web applications.
