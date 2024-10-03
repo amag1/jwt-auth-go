@@ -40,6 +40,16 @@ Todas las rutas disponibles para la autenticación de usuarios están bajo el en
     - Una ruta protegida de ejemplo, accesible solo con un token de acceso válido.
     - Demuestra el uso de middleware de autenticación para restringir el acceso solo a usuarios autorizados.
         
+## Cómo levantar el proyecto
+1. Clonar el repositorio
+2. Setear variables de entorno:
+    - **DB**: URL de conexión a la base de datos, en formato `username:password@tcp(host:port)/database`.
+    - **JWT_SESSION_SECRET**: Clave secreta para firmar tokens de sesión
+    - **JWT_REFRESH_SECRET**: Una clave diferente para firmar los tokens de acceso.
+    - **PORT**: Puerto donde se ejecutará la aplicación.
+3. Ejecutar migraciones
+    - El projecto contiene un directorio `migration` con los archios `.sql` necesarios para levantar la base de datos.
+
 # EN - User Authentication and Authorization Service
 ## Introduction
 
@@ -82,3 +92,14 @@ All the available routes for user authentication are under the `/api/user` endpo
     - A sample protected route, only accessible with a valid access token.
     - Demonstrates the use of authentication middleware for restricting access to authorized users only.
 
+## Running the project
+
+1. Clone the repository
+2. Set environment variables:
+    - **DB**: The database connection string in the format `username:password@tcp(host:port)/database`.
+    - **JWT_SESSION_SECRET**: The secret key used to sign session (access) tokens.
+    - **JWT_REFRESH_SECRET**: A different secret key used to sign refresh tokens.
+    - **PORT**: The port on which the application will run.
+3. Run migrations
+    - The project contains a `migration` directory with SQL files to set up the initial database schema. Before starting the application, ensure that the migrations are applied to your database
+    

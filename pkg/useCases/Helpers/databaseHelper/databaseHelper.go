@@ -12,9 +12,8 @@ import (
 var (
 	Db *gorm.DB
 
-	databaseName  = "/auth"
 	parseTimeFlag = "?parseTime=true"
-	connectionUrl = os.Getenv("DB") + databaseName + parseTimeFlag
+	connectionUrl = os.Getenv("DB") + parseTimeFlag
 
 	loc = time.FixedZone("", -3*60*60)
 )
