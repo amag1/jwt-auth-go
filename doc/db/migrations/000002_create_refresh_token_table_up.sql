@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS refresh_token(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	token TEXT,
+    user_id INT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)

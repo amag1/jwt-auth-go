@@ -1,0 +1,30 @@
+{
+    "LOCAL": {
+        "name": "LOCAL",
+        "database": "auth",
+        "username": "root",
+        "host": "localhost",
+        "port": "3306"
+    },
+    "PROD": {
+        "name": "PROD",
+        "database": "database_name",
+        "username": "root",
+        "host": "example.com",
+        "port": "3306"
+    },
+    "QA": {
+        "name": "QA",
+        "database": "database_name",
+        "username": "root",
+        "host": "example.com",
+        "port": "3307"
+    },
+    "TESTING": {
+        "name": "TESTING",
+        "database": "database_name",
+        "username": "root",
+        "host": "localhost",
+        "port": "3308"
+    }
+}

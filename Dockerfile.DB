@@ -1,0 +1,15 @@
+FROM ubuntu
+
+WORKDIR /migration
+COPY . .
+
+# Install needed packages
+RUN apt update && apt install -y wget
+
+# Create migrations script
+RUN echo "wget https://github.com/Juanma1223/Golang_migrations/releases/download/v1.0/migration && chmod +x ./migration && ./migration --env TESTING -p root" > migrate_script.sh
+
+# Make migrate script executable
+RUN chmod +x migrate_script.sh
+
+ENTRYPOINT [ "sh","/migration/migrate_script.sh" ]
