@@ -71,7 +71,7 @@ func (ur UserRouter) Routes() http.Handler {
 	r.Post("/login", ur.Login)
 	r.Post("/register", ur.Register)
 	r.Post("/refresh", ur.RefreshToken)
-	r.Post("/logout", ur.Logout)
+	r.Delete("/logout", ur.Logout)
 
 	r.With(auth.JWTMiddleware).Get("/protected", ur.ProtectedRoute)
 	return r
